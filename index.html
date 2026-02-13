@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albapelu | La Peluquería en Albacete</title>
+  <meta name="description" content="Albapelu, La Peluquería. Cortes clásicos y creativos en Albacete desde 2007." />
+  <style>
+    :root{
+      --bg:#0f0f12;
+      --card:#17171c;
+      --text:#f6f6f7;
+      --muted:#c9c9cf;
+      --accent:#f97316;
+      --accent2:#fb923c;
+      --line:#2a2a33;
+      --ok:#22c55e;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0 18px;border-bottom:1px solid var(--line)}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .badge{font-size:.8rem;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;padding:28px 0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+    h1{margin:0 0 10px;font-size:2rem;line-height:1.15}
+    .sub{color:var(--muted);line-height:1.6}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:12px;padding:12px 15px}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#111}
+    .btn.secondary{border:1px solid var(--line);color:var(--text)}
+    .quick{display:grid;gap:10px}
+    .quick .item{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--line);border-radius:12px}
+    .dot{width:9px;height:9px;border-radius:50%;background:var(--ok);margin-top:7px;flex:0 0 9px}
+    h2{font-size:1.35rem;margin:0 0 14px}
+    .section{margin-top:16px}
+    .hours{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .hours .row{padding:10px;border:1px solid var(--line);border-radius:10px;background:#141419}
+    .hours b{display:block}
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .gallery img{width:100%;height:240px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+    .location{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .location img{width:100%;height:280px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+    .muted{color:var(--muted)}
+    footer{margin-top:20px;padding:20px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .location{grid-template-columns:1fr}
+    }
+    @media (max-width: 620px){
+      h1{font-size:1.65rem}
+      .gallery{grid-template-columns:1fr}
+      .hours{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">ALBAPELU · La Peluquería</div>
+      <div class="badge">Desde 2007</div>
+    </nav>
+
+    <section class="hero">
+      <article class="card">
+        <h1>Tu peluquería en Albacete, cortes clásicos y creativos</h1>
+        <p class="sub">
+          Estamos en <b>C. Cid, 49 (bajo), 02001 Albacete</b>, próximo a Albacenter.
+          Atención por teléfono y WhatsApp para citas.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="tel:+34671449320">Llamar ahora</a>
+          <a class="btn secondary" href="https://wa.me/34671449320?text=Hola%20Albapelu%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+        </div>
+      </article>
+
+      <aside class="card quick">
+        <div class="item"><span class="dot"></span><div><b>Teléfono</b><span class="muted">671 449 320</span></div></div>
+        <div class="item"><span class="dot"></span><div><b>Dirección</b><span class="muted">C. Cid, 49, 02001 Albacete</span></div></div>
+        <div class="item"><span class="dot"></span><div><b>Zona</b><span class="muted">Próximo a Albacenter</span></div></div>
+        <div class="item"><span class="dot"></span><div><b>Estado</b><span class="muted">Cita previa por llamada o WhatsApp</span></div></div>
+      </aside>
+    </section>
+
+    <section class="card section">
+      <h2>Horario</h2>
+      <div class="hours">
+        <div class="row"><b>Lunes</b><span class="muted">10:00–14:00 · 16:00–20:00</span></div>
+        <div class="row"><b>Martes</b><span class="muted">10:00–14:00 · 16:00–20:00</span></div>
+        <div class="row"><b>Miércoles</b><span class="muted">10:00–14:00 · 16:00–20:00</span></div>
+        <div class="row"><b>Jueves</b><span class="muted">10:00–14:00 · 16:00–20:00</span></div>
+        <div class="row"><b>Viernes</b><span class="muted">10:00–14:00 · 16:00–20:00</span></div>
+        <div class="row"><b>Sábado</b><span class="muted">10:00–14:00 · 16:00–20:00</span></div>
+        <div class="row"><b>Domingo</b><span class="muted">Cerrado</span></div>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Trabajos de Albapelu</h2>
+      <p class="muted">Ejemplos reales de cortes y diseño.</p>
+      <div class="gallery">
+        <img src="assets/corte-corazon.png" alt="Corte creativo con diseño de corazón" />
+        <img src="assets/corte-geometrico.png" alt="Corte creativo con diseño geométrico" />
+        <img src="assets/corte-linea.png" alt="Corte degradado con líneas laterales" />
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Encuéntranos</h2>
+      <div class="location">
+        <img src="assets/fachada-local.png" alt="Fachada de Albapelu" />
+        <div>
+          <p><b>Albapelu, La Peluquería</b></p>
+          <p class="muted">C. Cid, 49, Bajo · 02001 Albacete</p>
+          <p class="muted">Tel: 671 449 320</p>
+          <div class="cta">
+            <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Albapelu%20C.%20Cid%2049%20Albacete" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Tarjeta de referencia</h2>
+      <img src="assets/tarjeta-albapelu.png" alt="Tarjeta de Albapelu" style="width:100%;max-width:680px;border-radius:12px;border:1px solid var(--line);" />
+    </section>
+
+    <footer>
+      Demo web creada para presentación interna de Albapelu. Se puede ampliar con: lista de servicios/precios, reseñas, formulario y reserva online.
+    </footer>
+  </div>
+</body>
+</html>
